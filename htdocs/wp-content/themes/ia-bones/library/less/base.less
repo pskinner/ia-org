@@ -16,8 +16,8 @@ GENERAL STYLES
 *********************/
 
 body {
-	font-family: Georgia, serif;
-	font-size: 14px;
+	font-family: Helvetica, sans-serif;
+	font-size: 12px;
 	line-height: 1.5;
 	color: #565656;
 }
@@ -127,12 +127,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 }
 
 h1, .h1 {
-	font-size: 2.5em;
+	font-size: 2em;
 	line-height: 1.333em;
 }
 
 h2, .h2 {
-	font-size: 1.75em;
+	font-size: 1.4em;
 	line-height: 1.4em;
 	margin-bottom: 0.375em;
 }
@@ -255,8 +255,25 @@ POSTS & CONTENT STYLES
 
 		.hentry {
 
-			header {}
-
+			header {
+				h1 {
+					background-color: @mid-grey;
+					margin: 6px 10px 5px 10px;
+				}
+			}
+			background-color: @mid-grey;
+			margin-bottom: 10px;
+			border: dotted 1px @mid-grey;
+			section {
+				margin: 0;
+				img {
+					margin-bottom: 0;
+				}
+				p {
+					width: 50%;
+					margin: 10px;
+					}
+			}
 			footer {}
 
 		} /* end .hentry */

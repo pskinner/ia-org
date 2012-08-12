@@ -22,6 +22,10 @@ NAVIGATION STYLES
 *********************/
 
 .nav {}
+	
+	@bgcolor: #FFF;
+	
+	@bordercolor: #DDD;
 
 	/* .menu is clearfixed inside mixins.scss */
 	.menu {
@@ -31,7 +35,10 @@ NAVIGATION STYLES
 					float: left;
 					text-decoration: none;
 					display: inline;
-					margin-right: 10px;
+					margin: 0 10px 0 0;
+					padding: 2px 0 2px 10px;
+					background-color: @bgcolor;
+					border-left: 1px dotted @bordercolor;
 					
 					/*
 					you can use hover styles here even though this size

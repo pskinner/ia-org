@@ -29,8 +29,9 @@ require_once('library/bones.php'); // if you remove this, bones will break
     - an example custom post type
     - example custom taxonomy (like categories)
     - example custom taxonomy (like tags)
-*/
-require_once('library/custom-post-type.php'); // you can disable this if you like
+
+require_once('library/custom-post-type.php'); // you can disable this if you like */
+require_once('library/programmes-post-type.php'); // you can disable this if you like
 /*
 3. library/admin.php
     - removing some default WordPress dashboard widgets
@@ -48,6 +49,7 @@ require_once('library/custom-post-type.php'); // you can disable this if you lik
 /************* THUMBNAIL SIZE OPTIONS *************/
 
 // Thumbnail sizes
+add_image_size( 'bones-thumb-800', 800, 250, true );
 add_image_size( 'bones-thumb-600', 600, 150, true );
 add_image_size( 'bones-thumb-300', 300, 100, true );
 /* 
